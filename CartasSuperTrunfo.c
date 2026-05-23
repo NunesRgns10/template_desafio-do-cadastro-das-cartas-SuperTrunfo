@@ -26,7 +26,7 @@ int main() {
   char nomeCidade2[30];
   int populacao2 = 0;
   float area2 = 0.0f;
-  float PIB2 =  0.0f;
+  float PIB2 = 0.0f;
   int numPontoTuristico2 = 0;
 // acrescentado no nível intermediário
     float densidade2 = 0.0f;
