@@ -95,7 +95,7 @@ printf("  ******  Entre com os dados da carta 2 *****  \n");
     printf("População: %d habitantes\n", populacao);
     printf("Área da Cidade: %.2f km2\n", area);
     printf("PIB da Cidade: %.2f reais\n", PIB);
-    printf("Pontos turísticos da Cidade: %.2f .\n", numPontoTuristico);
+    printf("Pontos turísticos da Cidade: %d .\n", numPontoTuristico);
     printf("Densidade populacional da Cidade: %.2f .\n", densidade );
     printf("PIB per capita: %.2f .\n", PIBPerCapita);
     
