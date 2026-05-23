@@ -15,6 +15,10 @@ int main() {
     float PIB = 0.0f;
     int numPontoTuristico = 0;
 
+// acrescentado no nível intermediário
+    float densidade = 0.0f;
+    float PIBPerCapita = 0.0f;
+
   // Carta 2
   // Esta não é uma prática correta. o código foi duplicado porque a instrução era não usar laço na lógica.
   char estado2;
@@ -24,6 +28,10 @@ int main() {
   float area2 = 0.0f;
   float PIB2 =  0.0f;
   int numPontoTuristico2 = 0;
+// acrescentado no nível intermediário
+    float densidade2 = 0.0f;
+    float PIBPerCapita2 = 0.0f;
+
 
   // Área para entrada de dados
    printf("  ******  Entre com os dados das cartas *****  \n");
@@ -72,6 +80,12 @@ printf("  ******  Entre com os dados da carta 2 *****  \n");
     printf("Informe o número de pontos turísticos da cidade: \n");
     scanf("%d", &numPontoTuristico2);
 
+// calcula densidades populacionais
+    densidade = (populacao / area);      // densidade populacional da cidade 1
+    densidade2 = (populacao2 / area2);    // densidade populacional da cidade 2
+    PIBPerCapita = (PIB / populacao);    // pib per capita da cidade 1
+    PIBPerCapita2 = (PIB2 / populacao2); // pib per capita da cidade 2
+
 
   // Área para exibição dos dados da cidade 1
     printf("  ******  exibição dos dados digitados por carta *****  \n");
@@ -81,7 +95,10 @@ printf("  ******  Entre com os dados da carta 2 *****  \n");
     printf("População: %d habitantes\n", populacao);
     printf("Área da Cidade: %.2f km2\n", area);
     printf("PIB da Cidade: %.2f reais\n", PIB);
-    printf("Pontos turísticos da Cidade: %.d .\n", numPontoTuristico);
+    printf("Pontos turísticos da Cidade: %.2f .\n", numPontoTuristico);
+    printf("Densidade populacional da Cidade: %.2f .\n", densidade );
+    printf("PIB per capita: %.2f .\n", PIBPerCapita);
+    
 
     printf(" ---------------------------------------  \n");
 
@@ -93,6 +110,9 @@ printf("  ******  Entre com os dados da carta 2 *****  \n");
     printf("Área da Cidade: %.2f km2\n", area2);
     printf("PIB da Cidade: %.2f reais\n", PIB2);
     printf("Pontos turísticos da Cidade: %d .\n", numPontoTuristico2);
+    printf("Densidade populacional da Cidade: %.2f .\n", densidade2 );
+    printf("PIB per capita: %.2f .\n", PIBPerCapita2);
+ 
 
     printf(" ---------------------------------------  \n");
     
